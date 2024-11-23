@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        .active{
+        border: 1px solid red;  
+      }
+    </style>
+    <title>Contact form</title>
+</head>
+<body class="bg-green-200">
+    <div class="flex items-center justify-center h-screen font-karla my-24 md:my-0">
+        <form class="rounded-lg px-6 py-8 bg-white ">
+            <h1 class="text-2xl font-bold text-gray-900">Contact Us</h1>
+            <div class="flex flex-col space-y-3 md:space-x-2 md:flex-row md:space-y-0 mt-4">
+                <div>
+                    <p class="text-sm text-gray-500">First Name *</p>
+                    <input type="text" class="input-1 rounded-md border-2 pl-2 w-full py-1">
+                    <p class="hidden error-message-1 text-xs text-red pt-1 text-left">This field is required</p>
+                </div>
+                <div>
+                    <p class="text-sm text-gray-500">Last Name *</p>
+                    <input type="text" class="input-2 rounded-md border-2 pl-2 w-full py-1">
+                    <p class="hidden error-message-2 text-xs text-red pt-1 text-left">This field is required</p>
+                </div>
+            </div>
+            <div class="mt-3">
+                <p class="text-sm text-gray-500">Email Address *</p>
+                <input type="text" name="email" class="input-3 rounded-md border-2 pl-2 w-full py-1">
+                <p class="hidden error-message-31 text-xs text-red pt-1 text-left">Please enter a valid email address</p>
+                <p class="hidden error-message-32 text-xs text-red pt-1 text-left">This field is required</p>
+            </div>
+            <div class="mt-3">
+                <p class="text-sm text-gray-500">Query Type *</p>
+                <div class="flex flex-col space-y-3 md:space-x-2 md:flex-row md:space-y-0 mt-2 ">
+                    <div class="border-2 rounded-md w-full pl-3 py-1 ">
+                        <label for="id1">
+                            <div class="flex space-x-2 ">
+                                <input type="radio" name="class" id="id1" class="input-41">
+                                <p class="text-sm text-gray-500">General Enquiry</p>
+                            </div>    
+                        </label>
+                    </div>
+                    <div class="border-2 rounded-md w-full pl-3 py-1 ">
+                        <label for="id2">
+                            <div class="flex space-x-2">
+                                <input type="radio" name="class" id="id2" class="input-42">
+                                <p class="text-sm text-gray-500">Support Request</p>
+                            </div>    
+                        </label>
+                    </div>
+                </div>  
+                <p class="hidden error-message-4 text-xs text-red pt-1 text-left">Please select a query type</p> 
+            </div>
+            <div class="mt-3">
+                <p class="text-sm text-gray-500">Message *</p>
+                <!-- <textarea name="feedback" id="feedback" placeholder="Please add Feedback" class="input-5 w-full border-2 rounded-md">
+                </textarea> -->
+                <input type="text" class="input-5 rounded-md border-2 pl-2 w-full py-5">
+                <p class="hidden error-message-5 text-xs text-red pt-1 text-left">This field is required</p>
+            </div>
+            <div class="mt-5">
+                <div class="flex space-x-2">
+                    <input type="checkbox" name="" id="" class="input-6">
+                    <p class="text-sm text-gray-500">I consent to being contacted by the team *</p>
+                </div>
+                <p class="hidden error-message-6 text-xs text-red pt-1 text-left">This field is required</p>
+            </div>
+            <div class="mt-5">
+                <button class="button rounded-md py-1 w-full bg-green-600 hover:bg-gray-900 text-white">
+                    Submit
+                </button>    
+            </div>            
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
